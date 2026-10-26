@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sendora — Gmail automation agent</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0; font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         background: #0d1117; color: #e6edf3; }
+  main { max-width: 720px; margin: 0 auto; padding: 72px 24px 96px; }
+  h1 { font-size: 2rem; margin: 0 0 8px; letter-spacing: -0.02em; }
+  .tag { color: #8b949e; margin: 0 0 40px; }
+  h2 { font-size: 1.05rem; margin: 36px 0 8px; color: #e6edf3; }
+  p, li { color: #c9d1d9; }
+  ul { padding-left: 20px; }
+  a { color: #58a6ff; }
+  .card { border: 1px solid #30363d; border-radius: 12px; padding: 20px 24px; background: #161b22; }
+  footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid #30363d; color: #8b949e; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Sendora</h1>
+  <p class="tag">A private, single-user Gmail automation agent.</p>
+
+  <div class="card">
+    <p><strong>Sendora</strong> is a personal automation tool. It connects to one Gmail mailbox — the owner's own — through the
+    Gmail API to sort incoming mail, apply labels, and prepare draft replies for review. It never sends email on its own:
+    every draft is left in the mailbox for the owner to read, edit, and send manually.</p>
+  </div>
+
+  <h2>Who runs it</h2>
+  <p>Sendora is operated by a single person, for their own mailbox only. It is not offered as a service, it has no other
+  users, and it does not process anyone else's data.</p>
+
+  <h2>What it does with Gmail data</h2>
+  <ul>
+    <li>Reads message metadata and bodies from the owner's inbox in order to classify each message.</li>
+    <li>Applies Gmail labels (read, categorize) to those messages.</li>
+    <li>Creates draft replies in the owner's mailbox. Drafts are never sent automatically.</li>
+    <li>Deletes nothing without explicit confirmation, and reads no other mailbox than the owner's.</li>
+  </ul>
+
+  <h2>Data storage</h2>
+  <p>The OAuth refresh token is stored locally on the owner's Mac. Message contents are processed in memory and are not
+  copied to any third-party service. See the <a href="./privacy.html">privacy policy</a> for details.</p>
+
+  <h2>Contact</h2>
+  <p>For any question about this application or the data it handles:
+  <a href="mailto:pchanvallon@gmail.com">pchanvallon@gmail.com</a>.</p>
+
+  <footer>
+    Sendora — personal tool operated from France ·
+    <a href="./privacy.html">Privacy policy</a>
+  </footer>
+</main>
+</body>
+</html>
